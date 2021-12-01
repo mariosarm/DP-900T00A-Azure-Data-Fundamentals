@@ -2,11 +2,11 @@
 resource=`az group list --query '[0].name' --output tsv`
 location=`az group list --query '[0].location' --output tsv`
 
-server=contoso-server-$(openssl rand -hex 5)
+server=mariosarm-server-$(openssl rand -hex 5)
 database="Inventory"
 
-login="sampleLogin"
-password="samplePassword123!"
+login="mariosarm"
+password="pa55word."
 
 startIP=0.0.0.0
 endIP=0.0.0.0
